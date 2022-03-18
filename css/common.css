@@ -1,0 +1,301 @@
+/* 声明字体图标 这里一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+.w{
+    width:1200px;
+    margin:0 auto;
+}
+/*--------------最顶端-----------------------*/
+.shortcut{
+    background-color: #f1f1f1;
+    height:30px;
+    line-height: 30px;
+}
+.scLeft{
+    float: left;
+}
+.scRight{
+    float: right;
+}
+.scLeft ul li{
+    float: left;
+    padding-right: 12px;
+    color:#666666;
+}
+.scLeft ul li a{
+    font-size: 12px;
+}
+.scRight ul li{
+    float: left;
+}
+.scRight ul li:nth-child(even){
+    width:0.5px;
+    height:12px;
+    margin:9px 15px;
+    background-color: #666;
+}
+.scRight ul .scrlist a::after{
+    content:'\e91e';
+    font-family: 'icomoon';
+    margin-left: 6px;
+}
+/*-------------------------------------*/
+/*--------------header-----------------------*/
+.header{
+    position:relative;
+    height:105px;
+}
+/*--logo--*/
+.logo{
+    position:absolute;
+    top:25px;
+    width:171px;
+    height:61px;
+}
+.logo h1 a{
+    display: block;
+    width:171px;
+    height:61px;
+    background:url(../images/logo.png) no-repeat;
+    font-size: 0px;
+}
+/*------*/
+/*--search--*/
+.search{
+    position: absolute;
+    left:350px;
+    top:25px;
+    width:538px;
+    height:36px;
+    border: #b1191a solid 2px;
+}
+.search input{
+    float: left;
+    padding-left: 15px;
+    width: 454px;
+    height:32px;
+}
+.search button{
+    float: left;
+    width: 80px;
+    height:33px;
+    background-color:#b1191a;
+    color:white;
+}
+/*------*/
+/*--hotwords--*/
+.hotwords{
+    position: absolute;
+    left:355px;
+    top:70px;
+}
+.hotwords ul li{
+    float: left;
+    margin-right: 25px;
+}
+/*------*/
+/*--shoppingCart--*/
+.shoppingCart{
+    position: absolute;
+    right: 60px;
+    top:25px;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border:1px solid #dfdfdf;
+}
+.shoppingCart a::before{
+    margin-right: 5px;
+    content: '\e93a';
+    font-family: 'icomoon';
+    color: #d95050;
+}
+.shoppingCart a::after{
+    vertical-align: middle;
+    margin-left: 10px;
+    content: '\e920';
+    font-family: 'icomoon';
+}
+.shoppingCart i{
+    position: absolute;
+    top:-5px;
+    left: 90px;
+    height:15px;
+    background-color:#e60012;
+    color:white;
+    line-height: 15px;
+    padding: 0 5px;
+    border-radius: 8px 8px 8px 0;
+}
+/*------*/
+/*----------------------------------------*/
+/*----------------nav-------------------*/
+.nav{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: solid 2px #e60012;
+}
+
+/* dropdown */
+.dropdown{
+    float: left;
+    width: 210px;
+    height: 45px;
+}
+/* dt */
+.dt{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.dt p{
+    font-size: 16px;
+    background-color: #b1191a;
+    color: white;
+}
+
+/*----*/
+/* dd */
+.dd{
+    display:none;
+    height:465px;
+    padding-top:5px;
+    background-color: #c81623;
+    border: 1px #c81623 solid;
+}
+.dt:hover + .dd,
+.dd:hover{
+    display:block;
+}
+.dd ul li{
+    height: 30.5px;
+    margin-left: 2px;
+    padding-left: 10px;
+    line-height: 30.5px;
+}
+.dd ul li a{
+    font-size: 14px;
+    color: white;
+}
+.dd ul li::after{
+    float: right;
+    margin-right: 10px;
+    font-family: 'icomoon';
+    content: '\e920';
+    font-size: 14px;
+    color: white;
+    vertical-align: middle;
+}
+.dd ul li:hover{
+    background-color: white;
+}
+.dd ul li:hover a{
+    color: #c81623;
+}
+/*----*/
+/*----------*/
+/* navRight */
+.navRight{
+    float: left;
+}
+.navRight ul li{
+    float: left;
+    height: 44px;
+}
+.navRight ul li a{
+    font-size: 16px;
+    color: #666666;
+    padding: 0 25px;
+}
+.navRight ul li:hover{
+    background-color: #c81623;
+}
+.navRight ul li:hover a{
+    color: white;
+}
+/*----------*/
+/*--------------------------------------*/
+/*--------------Footer--------------------*/
+.footer{
+    height:415px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+    
+}
+.footTop{
+    height:90px;
+    padding-left: 40px;
+    border-bottom: 2px solid #ededed;
+}
+.footTop li{
+    vertical-align: middle;
+    float: left;
+    width:240px;
+}
+.footTop span{
+    float:left;
+    display: block;
+    width:52px;
+    height:50px;
+    margin-right:5px;
+    background: url(../images/icons.png) no-repeat -252px -2px;
+}
+.footTop h4{
+    font-size: 14px;
+
+}
+.footTop p{
+    font-size: 12px;
+
+}
+/*------modHelp--------*/
+.modHelp{
+    height:190px;
+    border-bottom: 2px solid #ededed;
+    padding-left:50px;
+}
+.modHelp dl{
+    float:left;
+    margin-right:115px;
+}
+.modHelp dt{
+    padding:22px 0 12px 0;
+    font-size: 16px;
+}
+.modHelp dd{
+    padding-bottom:2px;
+    font-size: 12px;
+}
+.modHelp .modHelpPic{
+    float:left;
+    margin-right:0px;
+    text-align: center;
+}
+/*-------------------*/
+/*------modCopyRight--------*/
+.modCopyRight{
+text-align: center;
+}
+.modCopyRight .aboutUs{
+    margin: 18px 0;
+}
+.modCopyRight .aboutUs a{
+    padding:0 15px;
+}
+.modCopyRight .copyright{
+    line-height: 20px;
+}
+/*-------------------------*/
+/*--------------------------------------*/
